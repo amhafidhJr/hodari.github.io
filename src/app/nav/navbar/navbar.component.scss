@@ -1,0 +1,57 @@
+.bg-theme {
+  background-color: #f0eaea;
+}
+
+.nav-item > a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-sm {
+  font-size: 12px !important;
+}
+
+/* Basic button styles */
+.basic-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #159f97;
+  color: #fff;
+  background-color: #159f97;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Added margin between buttons */
+}
+
+/* Outline button styles */
+.button-outline {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #159f97;
+  color: #159f97;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.button:hover,
+.button-outline:hover {
+  background-color: #0056b3;
+}
+
+/* Hover effect for outline button */
+.button-outline:hover {
+  background-color: #159f97;
+  color: #fff;
+}
