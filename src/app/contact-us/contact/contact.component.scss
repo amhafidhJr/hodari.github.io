@@ -7,6 +7,10 @@ section {
   background-position: center;
 }
 
+.bg-theme {
+  background-color: #f0eaea;
+}
+
 @media only screen and (max-width: 768px) {
   .contact {
     margin-bottom: 60px;
@@ -206,4 +210,8 @@ section {
 .button-outline:hover {
   background-color: #159f97;
   color: #fff;
+}
+
+.border-color {
+  border-top: 1px solid #d7dee5ae;
 }

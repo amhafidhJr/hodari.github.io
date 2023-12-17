@@ -19,9 +19,13 @@
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1">
+
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+            <a class="nav-link btn btn-sm" [routerLink]="['/']" routerLinkActive #rla00="routerLinkActive"
+              [ngClass]="{'basic-button': rla00.isActive, 'button-outline': !rla00.isActive}"
+              [routerLinkActiveOptions]="{ exact: true }" (click)="closeOffcanvasMenu()">Home</a>
           </li>
+
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#!" id="accountDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">Account</a>
@@ -45,23 +49,36 @@
             </ul>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link" routerLink="/about">About</a>
+            <a class="nav-link btn btn-sm" (click)="closeOffcanvasMenu()" routerLink="/about" routerLinkActive
+              #rla="routerLinkActive"
+              [ngClass]="{'basic-button': rla.isActive, 'button-outline': !rla.isActive}">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/team">Team</a>
+            <a class="nav-link btn btn-sm" (click)="closeOffcanvasMenu()" routerLink="/team" routerLinkActive
+              #rla1="routerLinkActive"
+              [ngClass]="{'basic-button': rla1.isActive, 'button-outline': !rla1.isActive}">Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/projects">Projects</a>
+            <a class="nav-link btn btn-sm" (click)="closeOffcanvasMenu()" routerLink="/projects" routerLinkActive
+              #rla2="routerLinkActive"
+              [ngClass]="{'basic-button': rla2.isActive, 'button-outline': !rla2.isActive}">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/donate">Donate</a>
+            <a class="nav-link btn btn-sm" (click)="closeOffcanvasMenu()" routerLink="/donate" routerLinkActive
+              #rla3="routerLinkActive"
+              [ngClass]="{'basic-button': rla3.isActive, 'button-outline': !rla3.isActive}">Donate</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-sm" routerLink="/faqs">FAQs</a>
+            <a class="nav-link btn btn-sm" (click)="closeOffcanvasMenu()" routerLink="/faqs" routerLinkActive
+              #rla4="routerLinkActive"
+              [ngClass]="{'basic-button': rla4.isActive, 'button-outline': !rla4.isActive}">FAQs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/contact">Contact</a>
+            <a class="nav-link btn btn-sm" (click)="closeOffcanvasMenu()" routerLink="/contact" routerLinkActive
+              #rla5="routerLinkActive"
+              [ngClass]="{'basic-button': rla5.isActive, 'button-outline': !rla5.isActive}">Contact</a>
           </li>
+
         </ul>
       </div>
     </div>
