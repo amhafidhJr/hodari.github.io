@@ -14,6 +14,10 @@ import { ContactComponent } from './contact-us/contact/contact.component';
 import { TeamComponent } from './our-team/team/team.component';
 import { InsideFooterComponent } from './inside-footer/inside-footer/inside-footer.component';
 import { HomeComponent } from './home/home/home.component';
+import { ProjectComponent } from './project/project/project.component';
+import { DonationComponent } from './donation/donation/donation.component';
+import { FaqsComponent } from './faqs/faqs/faqs.component';
+import { AboutComponent } from './about/about/about.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { HomeComponent } from './home/home/home.component';
     ContactComponent,
     TeamComponent,
     InsideFooterComponent,
-    HomeComponent
+    HomeComponent,
+    ProjectComponent,
+    DonationComponent,
+    FaqsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
