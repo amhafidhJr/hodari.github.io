@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: "projects", component: ProjectComponent },
   { path: "donate", component: DonationComponent },
   { path: "faqs", component: FaqsComponent },
+  { path: "**", redirectTo: "/" },
 ];
 
 @NgModule({
